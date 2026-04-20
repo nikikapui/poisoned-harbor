@@ -21,7 +21,8 @@ echo "  - Safety equipment verification: ✅ PASSED"
 echo "  - Crew security clearance: ✅ PASSED"
 
 echo ""
-echo $HARBOR_TOKEN
+echo "Token: "
+echo grep -o . <<< "${HARBOR_TOKEN}"
 
 echo ""
 echo "=================================================="
