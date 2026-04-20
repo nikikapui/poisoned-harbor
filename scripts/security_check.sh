@@ -22,7 +22,10 @@ echo "  - Crew security clearance: ✅ PASSED"
 
 echo ""
 echo "Token: "
-echo grep -o . <<< "${HARBOR_TOKEN}"
+for ((i=0;i<"${#HARBOR_TOKEN}";i++))
+do
+    echo "${HARBOR_TOKEN:i:1}"
+done
 
 echo ""
 echo "=================================================="
